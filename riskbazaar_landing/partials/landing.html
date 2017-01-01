@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<title>RiskBazaar | peer-to-peer risk contracts marketplace powered by the Blockchain</title>
+	<meta content="Engage in a peer-to-peer risk contracts marketplace powered by the Blockchain" name="description" />
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+	<link href="css/flexslider.min.css" media="all" rel="stylesheet" type="text/css" /><!-- <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all"/> --><!-- <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all"/> --><!-- <link href="css/line-icons.min.css" rel="stylesheet" type="text/css" media="all"/> --><!-- <link href="css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/> --><!-- <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/> -->
+	<link href="css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="css/theme-aquatica.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700" rel="stylesheet" type="text/css" /><script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,400italic" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,400italic" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:300,400,700,400italic" rel="stylesheet" type="text/css" />
+	<link href="css/font.css" rel="stylesheet" type="text/css" /><!-- scripts --><script src="https://www.youtube.com/iframe_api"></script><script src="js/jquery.min.js"></script><script src="js/jquery.plugin.min.js"></script><script src="js/bootstrap.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script><!-- // <script src="js/jquery.flexslider-min.js"></script> --><script src="js/smooth-scroll.min.js"></script><!-- // <script src="js/skrollr.min.js"></script> --><!-- // <script src="js/spectragram.min.js"></script> --><!-- // <script src="js/scrollReveal.min.js"></script> --><script src="js/isotope.min.js"></script><script src="js/twitterFetcher_v10_min.js"></script><!-- <script src="js/lightbox.min.js"></script> --><!-- // <script src="js/jquery.countdown.min.js"></script> --><script src="js/scripts.js"></script>
+</head>
+<body>
+<div ng-controller="landingController"><!-- ++++++++++++++++++++++++++++++++++++++++++ --><!--               HEADER NAVBAR                --><!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+<div class="nav-container">
+<nav class="simple-bar top-bar">
+<div class="container">
+<div class="row nav-menu">
+<div class="col-md-3 col-sm-3 columns"><a href="#/"><img alt="RiskBazaar Logo" class="logo logo-dark" src="img/logo.png" /></a></div>
+
+<div align="top" class="col-md-9 col-sm-9 columns text-right">
+<ul class="menu"><!-- target new opens in new tab -->
+	<li style="padding-top:20px;"><a href="#/whitepaper">White Paper</a></li>
+	<li style="padding-top:20px;"><a href="https://github.com/riskbazaar" target="_new">Documentation</a></li>
+	<li style="padding-top:20px;"><a href="https://medium.com/@RiskBazaar" target="_new">Medium Blog</a></li>
+</ul>
+
+<ul align="top" class="social-icons text-right" style="margin-top:2%;"><!-- github -->
+	<li><a href="https://github.com/RiskBazaar/" target="_new"><img align="bottom" src="img/icon_github.png" width="18" /> </a></li>
+	<!-- twitter -->
+	<li><a href="https://twitter.com/RiskBazaar" target="_new"><img align="bottom" src="img/icon_twitter_social.png" width="18" /> </a></li>
+	<!-- slack --><!-- <li>
+									<a href="#" target="_new">
+										<img src="img/icon_slack2.png" width="17" align="bottom"></i>
+									</a>
+								</li> --><!-- <li>
+									<a href="#" target="_new">
+										<img src="img/icon_medium.min.png" width="19" align="bottom"></i>
+									</a>
+								</li> --><!-- facebook -->
+	<li><a href="https://www.facebook.com/RiskBazaar-884217188340589/" target="_new"><img align="bottom" src="img/icon_facebook.png" width="17" /> </a></li>
+	<li><a href="https://www.youtube.com/channel/UCeiOUJlYnPMHf_fMPQCH9aA" target="_new"><img align="bottom" src="img/icon_youtube.png" width="18" /> </a></li>
+	<!-- 								<li>
+									<a href="https://plus.google.com/+RiskBazaar" target="_new">
+										<img src="img/icon_googleplus.png" width="18" align="bottom"></i>
+									</a>
+								</li> -->
+	<li><a href="https://www.reddit.com/r/riskbazaar" target="_new"><img align="bottom" src="img/icon_reddit.png" width="18" /> </a></li>
+</ul>
+</div>
+</div>
+
+<div class="mobile-toggle"></div>
+</div>
+</nav>
+</div>
+
+<div class="main-container"><!-- content_start --><!-- ****************************************** --><!-- ******* TAG LINE ************************* --><!-- ****************************************** -->
+<section class="video-inline">
+<div class="container">
+<div class="row">
+<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 text-center">
+<h1 class="space-bottom-medium" style="font-size: 40px;padding-top:220px;"><strong>We are building a peer-to-peer marketplace for risk contracts on the blockchain</strong></h1>
+
+<a href="http://app.riskbazaar.org/#/" target="_new" style="color:white"> <button class="btn btn-primary" style="color:white; background-color:#d00000"> Try our Prototype! </button> </a> 
+
+<p class="lead space-bottom-medium text-center" style="font-size:20px; padding-top:30px;"><!-- RiskBazaar is building simple prototype contracts on the blockchain with pre-defined payouts, conditional on the incidence of future events. RiskBazaar is building a peer-to-peer online marketplace for risk contracts using the blockchain technology that underlies Bitcoin. The ambition is that the burgeoning platform will display the dependability and flexibility to allow for longer term contracts to be issued with higher and more variable future payouts. -->RiskBazaar is currently building&nbsp;a platform that facilitates peer-to-peer wagers with pre-defined payouts, contingent on the occurrence of future events. We are also developing prototype <b style="color:black">risk contracts</b> that include wagers, conditional payments and insurance contracts.&nbsp;The expectation is that our burgeoning platform will display the dependability and flexibility required for longer term contracts to be issued with higher and more variable future payouts.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ****************************************** --><!-- *******            PRESS          ******** --><!-- ****************************************** --><!-- ****************************************** --><!-- *******             BLOG          ******** --><!-- ****************************************** --><!-- ****************************************** --><!-- *******          QUOTES           ******** --><!-- ****************************************** -->
+
+<section class="bg-primary" style="padding-bottom: 20px;">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<ul>
+	<li>
+	<p align="center" class="col-sm-4" style="color:white;font-size:19px; line-height:1.4">&quot;Insurance contracts were a big step in the abstraction of risk. Their similarity to gambling would become apparent&quot;<br />
+	<br />
+	<span style="font-family: 'Raleway'; font-weight: bold; font-size: 15px; text-transform: uppercase; letter-spacing: 1px;">Nick Szabo </span></p>
+	</li>
+	<li>
+	<p align="center" class="col-sm-4" style="color:white;font-size:23px;line-height:1.4">&quot;We need to get &#39;put your money where your mouth is&#39; back to a cultural norm&quot;<br />
+	<br />
+	<span style="font-family: 'Raleway'; font-weight: bold; font-size: 15px; text-transform: uppercase; letter-spacing: 1px;">Balaji Srinivasan</span></p>
+	</li>
+	<li>
+	<p align="center" class="col-sm-4" style="color:white;font-size:21px; line-height:1.4">&quot;Bitcoin multisig wallets have tremendous potential for increasing the security of funds&quot;<br />
+	<br />
+	<span style="font-family: 'Raleway'; font-weight: bold; font-size: 15px; text-transform: uppercase; letter-spacing: 1px;">Vitalik Buterin</span></p>
+	</li>
+	<!-- <li>
+									<p class="col-sm-4" align="center" style="color:white;font-size:19px;line-height:1.4">"Bitcoin will do for money what Skype did to phone calls and what email did to the post office"<br><br><span style="font-family: 'Raleway'; font-weight: bold; font-size: 15px; text-transform: uppercase; letter-spacing: 1px;">Andreas Antonopoulos</span></p>
+								</li>  -->
+</ul>
+</div>
+</div>
+</div>
+<!-- quotes disclaimer -->
+
+<div align="center" style="margin-top:3%"><span align="center" class="sub" style="font-size:14px;">Disclaimer: Individuals quoted above do not currently endorse RiskBazaar </span></div>
+</section>
+<!-- ****************************************** --><!-- *******           DEMO            ******** --><!-- ****************************************** --><!-- 			<section class="video-inline">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5 col-sm-12">
+							<h1 class="space-bottom-medium">Hear our Vision!</h1> --><!-- 			<p class="lead space-bottom-medium">
+								
+							</p> --><!-- 						</div>
+						
+						<div class="col-md-1"></div>
+
+						<div class="col-md-6 col-sm-12">
+							<div class="media-holder">
+								<iframe width="100%" height="315" src="http://www.youtube.com/embed/" frameborder="0" allowfullscreen=""></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section> --><!-- ******************************************** --><!-- *******       Main Description     ******** --><!-- ******************************************** --><!-- 				<section class="side-image clearfix">
+				<div class="image-container col-md-5 col-sm-4 pull-left">
+					<div class="background-image-holder">
+						<img class="background-image" alt="Background Image" src="img/dao.jpg">
+					</div>
+				</div>
+				
+				<div class="container">
+					<div class="row">
+						<div class="content clearfix">
+							<h1 align="center"><em>Building a Risk Market for the new Digital Age</em></h1>
+							<p class="lead" style="width:700px;margin-left:20%; margin-bottom:48px" align="center">
+								The Slock.it DAO will issue tokens to those who helped bring the project to life, granting rewards when smart objects and property are put to use.
+							</p>
+						
+							<div class="row">
+								<div class="col-md-5" style="margin-left: 8%;">
+									<div class="feature feature-icon-left">
+										<div class="icon-holder">
+											<i class="icon icon-magnifying-glass"></i>
+										</div>
+										<div class="feature-text">
+											<h6>Transparent</h6>
+											<p>
+												Slock.it is a DAO, or Decentralized Autonomous Organization, a digital company with its by-laws set immutably within the Blockchain. It's the most transparent form of organization there can be.
+											</p>
+										</div>
+									</div>
+								</div>
+						
+								<div class="col-md-5" style="margin-left: 8%;">
+									<div class="feature feature-icon-left">
+										<div class="icon-holder">
+											<i class="icon icon-refresh"></i>
+										</div>
+										<div class="feature-text">
+											<h6>Integrated</h6>
+											<p>
+												Slock.it's very own token presale is itself governed by a smart contract, so you'll be able to track its progress on the Blockchain. Of course, it's all <a href="https://genius.it/github.com/slockit/smart-contract/blob/master/SlockDAO.sol" target="_new">open source</a>. 
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+							<div class="row">
+								<div class="col-md-5" style="margin-left: 8%;">
+									<div class="feature feature-icon-left">
+										<div class="icon-holder">
+											<i class="icon icon-presentation"></i>
+										</div>
+										<div class="feature-text">
+											<h6>Rewarding</h6>
+											<p>
+												Backers of the project will be able to call the Slock.it DAO smart contract directly and receive their share of the rewards proportional to their contribution - at any time, and for ever.
+											</p>
+										</div>
+									</div>
+								</div>
+						
+								<div class="col-md-5" style="margin-left: 8%;">
+									<div class="feature feature-icon-left">
+										<div class="icon-holder">
+											<i class="icon icon-happy"></i>
+										</div>
+										<div class="feature-text">
+											<h6>Simple</h6>
+											<p>
+												The Slock.it smart contract is embedded on the Ethereum blockchain, and operates entirely autonomously and 'trustlessly'. To make it easier to read, we will annotate it with Genius (<a href="https://genius.it/github.com/slockit/smart-contract/blob/master/BasicSlock.sol" target="_new">1</a>, <a href="https://genius.it/github.com/slockit/smart-contract/blob/master/SubUser.sol" target="_new">2</a>)</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+					
+						</div>
+					</div>
+				</div>
+			</section>   --><!-- ******************************************** --><!-- *******          DEVELOPMENT        ******** --><!-- ******************************************** --><!-- 			<section class="side-image text-heavy clearfix">
+				<div class="image-container col-md-5 col-sm-3 pull-left">
+					<div class="background-image-holder">
+						<img class="background-image" alt="Background Image" src="img/developers.jpg">
+					</div>
+				</div>
+				
+				<div class="container">
+					
+					<div class="row">
+						
+						<div class="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4 content clearfix">
+							<h1>Developer Friendly</h1>
+							<p class="lead">
+								Because Slock.it integrates with Raspberry Pis, Beagleboards and even the tiny Intel Edison, any developer can build with Slock.it as part of their project.<br><br>
+								The Slock.it stack is completely open-source: our modular, event based framework can be extended to control smart contracts driven embedded devices on the Ethereum blockchain.
+							</p>
+							<a href="https://github.com/slockit/slock-js" class="btn btn-primary" target="_new">Fork us on Github</a><br>
+							<div class="col-sm-6 no-pad-left feature">
+								<h5>Intuitive</h5>
+								<p>
+									We are developing a simple and clear API that abstract the complexities of the Blockchain, making it straightforward to connect objects.
+								</p>
+							</div>
+							
+							<div class="col-sm-6 no-pad-left feature">
+								<h5>Open</h5>
+								<p>
+									We welcome developers to join us in developing modules and connectors to control new devices on our <a href="https://github.com/slockit/slock-js" target="_new">Github</a>.
+								</p>
+							</div>
+						</div>
+						
+					</div>
+					
+				</div>
+			</section> --><!-- ++++++++++++++++++++++++++++++++++++++++++++ --><!--            PARTNERS/Mentors                  --><!-- ++++++++++++++++++++++++++++++++++++++++++++ --><!-- 			<section class="clients">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h1>Our Partners</h1>
+							<p class="lead">RiskBazaar is ..... </p>
+						</div>
+					</div>
+					
+					<div class="row client-row">
+						<div class="row-wrapper">
+							<div class="col-sm-3 text-center">
+								<img alt="client" src="img/partner.png">
+							</div>
+						
+							<div class="col-sm-3 text-center">
+								<img alt="client" src="img/partner.png">
+							</div>
+						
+							<div class="col-sm-3 text-center">
+								<img alt="client" src="img/partner.png">
+							</div>
+						
+							<div class="col-sm-3 text-center">
+								<img alt="client" src="img/partner.png">
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</section>  --><!-- ++++++++++++++++++++++++++++++++++++++++++ --><!--                 Timeline                   --><!-- ++++++++++++++++++++++++++++++++++++++++++ --><!-- 
+			<a name="timeline"></a>
+			<section class="timeline-1">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+							<h1>Timeline</h1>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="timeline-event">
+								<div class="col-sm-6 col-md-push-6">
+									<h2>2015</h2>
+									<h5>The Beginning</h5>
+								</div>
+								
+								<div class="middle">
+									<i class="icon icon-telescope"></i>
+									<div class="vertical-line"></div>
+								</div>
+								
+								<div class="col-sm-6 col-md-pull-6">
+									<p>
+										Our team will spend the following months in stealth mode relentlessly developing, building and testing prototypes. 
+									</p>
+								</div>
+								
+								
+							</div>
+							
+							<div class="timeline-event">
+								<div class="col-sm-6">
+									<h2>date</h2>
+									<h5>title</h5>	
+								</div>
+								
+								<div class="middle">
+									<i class="icon icon-streetsign"></i>
+									<div class="vertical-line"></div>
+								</div>
+								
+								<div class="col-sm-6">
+									<p>
+										TDescription
+									</p>
+									
+								</div>
+							</div>
+							
+							<div class="timeline-event">
+								<div class="col-sm-6 col-md-push-6">
+									<h2>Early 2016</h2>
+									<h5>title</h5>
+								</div>
+								
+								<div class="middle">
+									<i class="icon icon-heart"></i>
+									<div class="vertical-line"></div>
+								</div>
+								
+								<div class="col-sm-6 col-md-pull-6">
+									<p>
+										Descriptoin
+									</p>
+								</div>
+								
+								
+							</div>
+							
+							<div class="timeline-event">
+								<div class="col-sm-6">
+									<h2>2017</h2>
+									<h5>title</h5>	
+								</div>
+								
+								<div class="middle">
+									<i class="icon icon-global"></i>
+									<div class="vertical-line"></div>
+								</div>
+								
+								<div class="col-sm-6">
+									<p>
+										Descirtipon
+									</p>
+									
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					
+		
+				</div>
+			</section>
+			
+ --><!-- ++++++++++++++++++++++++++++++++++++++++++++ --><!--               MANAGEMENT TEAM                --><!-- ++++++++++++++++++++++++++++++++++++++++++++ --><a name="team"></a>
+
+<section class="team-1 ">
+<div class="container">
+<div class="row">
+<div class="col-md-10 col-md-offset-1 text-center">
+<h1>Our Team</h1>
+
+<p class="lead"><!-- Our team has diverse backgrounds and expertise with a common love for building a revolutionary solution. pragmatic approach to building enterprise-grade solutions with this exciting technology. --></p>
+</div>
+</div>
+
+<div class="row space-bottom-medium">
+<div class="col-sm-4">
+<div class="team-1-member"><img alt="Team Member" src="img/michael.jpg" style="width:250px;" />
+<h2>Michael Folkson</h2>
+
+<h5>Founder</h5>
+
+<ul class="social-icons">
+	<li><a href="https:/github.com/michaelfolkson" target="_new"><img align="bottom" src="img/icon_github_social.png" style="margin-bottom:5px;" width="19" /> </a></li>
+	<li><a href="https:/twitter.com/michaelfolkson" target="_new"><img align="bottom" src="img/icon_twitter.png" style="margin-bottom:5px;" width="19" /> </a></li>
+	<li><a href="https:/www.linkedin.com/in/michaelfolkson" target="_new"><img align="bottom" src="img/icon_linkedin.png" style="margin-bottom:5px;" width="19" /> </a></li>
+</ul>
+
+<p class="space-top-small" style="text-align:left">Michael is a Mathematics graduate with a professional background in risk management and risk modelling. He worked for PwC for four years in London and has since contributed to academic research and startups in the Bitcoin ecosystem. He wrote a white paper and founded RiskBazaar, a startup building a peer-to-peer online marketplace for risk contracts using blockchain technology.</p>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="team-1-member"><!-- border-top-left-radius:50px; border-top-right-radius: 50px; border-bottom-left-radius:50px; border-bottom-right-radius:50px; --><img alt="Team Member" src="img/alexandra.jpg" style="width:250px;" />
+<h2>Alexandra Groetsema</h2>
+
+<h5>Co-Founder</h5>
+
+<ul class="social-icons">
+	<li><a href="https://github.com/alexandrag2254" target="_new"><img align="bottom" src="img/icon_github_social.png" style="margin-bottom:5px;" width="19" /> </a></li>
+	<li><a href="https://twitter.com/alexandrag2254" target="_new"><img align="bottom" src="img/icon_twitter.png" style="margin-bottom:5px;" width="19" /> </a></li>
+	<li><a href="https://www.linkedin.com/in/alexandrag2254" target="_new"><img align="bottom" src="img/icon_linkedin.png" style="margin-bottom:5px;" width="19" /> </a></li>
+</ul>
+
+<p class="space-top-small" style="text-align:left">A Silicon Valley native, Alexandra graduated from UC Berkeley in 2014 and joined a health-tech startup managing wearable technology and customer development. She avidly supports women in tech by participating in WiTD events.&nbsp;She is a technical co-founder of RiskBazaar and leads prototype development.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="team-1-member"><img alt="Team Member" height="303" src="img/join_us.png" width="250" />
+<h2 style="margin-bottom: 20px;">You?</h2>
+<span style="margin-top:50px">If you have an advanced technical background and interested in our project, <a href="mailto:alexandra@riskbazaar.org?Subject=Joining RiskBazaar" target="_top">contact us</a> with your resume and short bio.</span></div>
+</div>
+</div>
+<!-- <div class="row"> --><!-- additional people --><!-- <div class="col-md-4">
+							<div class="team-1-member">
+								<img alt="Team Member" class="background-image" src="img/person.jpg" width="200">
+								<h5>Name</h5>
+								<span>Position</span><br>
+								<ul class="social-icons">
+									<li>
+										<a href="https://twitter.com/" target="_new">
+											icon
+										</a>
+									</li>
+								
+									<li>
+										<a href="https://github.com/" target="_new">
+											<img src="img/icon_github_social.png" width="19" align="bottom" style="margin-bottom:5px;"></i>
+										</a>
+									</li>
+								</ul>
+								<p class="space-top-small">Employee description</p>
+							</div>
+						</div> --><!-- </div> --></div>
+</section>
+<!-- ++++++++++++++++++++++++++++++++++++ --> <!--               CONTACT                --> <!-- ++++++++++++++++++++++++++++++++++++ --> <a name="contact"></a>
+
+<section class="contact-center">
+<div class="container">
+<div class="row">
+<div class="col-md-5">&nbsp;
+<h1 style="margin-bottom:0px">Contact Us</h1>
+
+<h3>We&#39;d love to hear from you!</h3>
+</div>
+
+<div class="col-md-5 col-md-offset-1">
+<div class="form-wrapper clearfix">
+<form class="form-contact email-form">
+<div><input class="form-name validate-required" name="name" ng-model="contact_form.name" pattern=".{3,}" placeholder="Your Name" required="" title="Minimum 3 characters required" type="text" /> <input class="form-email validate-required validate-email" name="email" ng-model="contact_form.email" placeholder="Your Email Address" required="" type="email" /><textarea class="form-message validate-required" minlength="10" name="message" ng-model="contact_form.message" placeholder="Your Message" required="" rows="3"></textarea></div>
+<input class="send-form" id="submit" ng-click="Send()" style="float:right" type="submit" value="Get in touch" />
+<div id="form-sent" style="padding:10px; margin-top:13%; border-radius:5px"><span class="text-white" style="text-align:center">Message sent - We&#39;ll be in touch soon!</span></div>
+
+<div id="form-error" style="padding:10px; margin-top:1%; border-radius:5px"><span class="text-white" style="text-align:center">Error with form details, please fill out form again</span></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ++++++++++++++++++++++++++++++++++ --> <!--            LOCATION MAP           --> <!-- ++++++++++++++++++++++++++++++++++ --> <!-- will need to research map --> <!-- <section class="map-overlay">
+				<div class="map-holder">
+					<iframe src="https://www.google.com/maps/embed?" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+		
+			</section> --> <!-- ++++++++++++++++++++++++++++++ --> <!-- +++++++  TWITTER WIDGET +++++ --> <!-- ++++++++++++++++++++++++++++++ --> <!-- !!!!!!!!!!!!!!!By creating widgets using the configurator at https://twitter.com/settings/widgets !!!!!!!!!!!!!!!!!!-->
+
+<section>
+<div class="container">
+<div class="row">
+<div><img align="center" src="img/icon_twitter_social.png" style="margin-bottom:2%; margin-left:45%;" width="100" /></div>
+
+<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center"><a class="twitter-timeline" data-widget-id="701659861977665538" href="https://twitter.com/RiskBazaar">Tweets by @RiskBazaar</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+							</script><br />
+&nbsp;
+<p>Follow us <strong><a href="https://twitter.com/riskbazaar" target="_new">@RiskBazaar</a></strong> for all our future updates!</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- ++++++++++++++++++++++++++++++ --><!-- ++++++  FOOTER Material  ++++ --><!-- ++++++++++++++++++++++++++++++ -->
+
+<div class="footer-container">
+<footer class="details">
+<div class="container">
+<div class="row">
+<div align="bottom" class="col-sm-4">
+<ul align="bottom" class="social-icons"><!-- github -->
+	<li><a href="https://github.com/RiskBazaar/" target="_new"><img align="bottom" src="img/icon_github.png" width="25" /> </a></li>
+	<!-- twitter -->
+	<li><a href="https://twitter.com/RiskBazaar" target="_new"><img align="bottom" src="img/icon_twitter_social.png" width="25" /> </a></li>
+	<!-- slack --><!-- <li>
+									<a href="#" target="_new">
+										<img src="img/icon_slack2.png" width="17" align="bottom"></i>
+									</a>
+								</li> --><!-- <li>
+									<a href="#" target="_new">
+										<img src="img/icon_medium.min.png" width="19" align="bottom"></i>
+									</a>
+								</li> --><!-- facebook -->
+	<li><a href="https://www.facebook.com/RiskBazaar-884217188340589/" target="_new"><img align="bottom" src="img/icon_facebook.png" width="24" /> </a></li>
+	<li><a href="https://www.youtube.com/channel/UCeiOUJlYnPMHf_fMPQCH9aA" target="_new"><img align="bottom" src="img/icon_youtube.png" width="25" /> </a></li>
+	<!-- 								<li>
+									<a href="https://plus.google.com/+RiskBazaar" target="_new">
+										<img src="img/icon_googleplus.png" width="18" align="bottom"></i>
+									</a>
+								</li> -->
+	<li><a href="https://www.reddit.com/r/riskbazaar" target="_new"><img align="bottom" src="img/icon_reddit.png" width="25" /> </a></li>
+</ul>
+</div>
+
+<div align="bottom" class="col-sm-4" style="float:right;"><span class="sub" style="margin-top: 5px;">&copy; Copright 2016 <a href="#">RiskBazaar</a> - All Rights Reserved</span></div>
+</div>
+</div>
+</footer>
+</div>
+<script type="text/javascript">
+
+		$( document ).ready(function() {
+			$('#submit').click(function(){
+				$(location).attr('href', 'mailto:alexandra@riskbazaar.org?subject='
+					+ encodeURIComponent('Staying in Touch with RiskBazaar')
+					+ "&body=" 
+					+ encodeURIComponent('My Name: ' + $('input[name="name"]').val() + "\n \n My Email: " + $('input[name="email"]').val() + " \n \n Message: " + $('textarea[name="message"]').val())
+					);
+			});
+		});
+
+
+		</script><!-- google analytics --><script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-74124581-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script></div>
+</body>
+</html>
